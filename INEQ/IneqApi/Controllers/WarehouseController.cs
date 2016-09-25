@@ -1,4 +1,4 @@
-﻿using IneqWebApi.Models;
+﻿using IneqApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
