@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IneqWebApp", "IneqWebApp\IneqWebApp.csproj", "{6CD1ACF1-A8E7-4361-B491-127FA7D40526}"
 EndProject
@@ -20,6 +20,26 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PHP Casos de Uso", "PHP Cas
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Script MySQL", "Script MySQL", "{71BB0B30-A78B-4A7B-8050-63B2E387BD67}"
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "php", "..\..\..\..\Documents\Universidad UTE\Programacion\Desarollo A 2 (eQUIPO NUEVO)\casos de uso\php\", "{787A5223-6707-482D-B269-71C668204234}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_63303"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\Documents\Universidad UTE\Programacion\Desarollo A 2 (eQUIPO NUEVO)\casos de uso\php\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_63303\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_63303"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\Documents\Universidad UTE\Programacion\Desarollo A 2 (eQUIPO NUEVO)\casos de uso\php\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_63303\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "63303"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,8 +54,15 @@ Global
 		{606444EB-A239-4535-9F2B-5744D29EEF0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{606444EB-A239-4535-9F2B-5744D29EEF0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{606444EB-A239-4535-9F2B-5744D29EEF0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{787A5223-6707-482D-B269-71C668204234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{787A5223-6707-482D-B269-71C668204234}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{787A5223-6707-482D-B269-71C668204234}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{787A5223-6707-482D-B269-71C668204234}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{787A5223-6707-482D-B269-71C668204234} = {F965B0D7-539B-4175-86FF-8EF7B41D0638}
 	EndGlobalSection
 EndGlobal
