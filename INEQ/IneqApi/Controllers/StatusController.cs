@@ -9,29 +9,29 @@ namespace IneqApi.Controllers
 {
     public class StatusController : ApiController
     {
-        // GET: api/Estado
+        // GET: api/Status
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
         }
 
-        // GET: api/Estado/5
+        // GET: api/Status/5
         public string Get(int id)
         {
             return "value";
         }
 
-        // POST: api/Estado
+        // POST: api/Status
         public void Post([FromBody]string value)
         {
         }
 
-        // PUT: api/Estado/5
+        // PUT: api/Status/5
         public void Put(int id, [FromBody]string value)
         {
         }
 
-        // DELETE: api/Estado/5
+        // DELETE: api/Status/5
         public void Delete(int id)
         {
         }
