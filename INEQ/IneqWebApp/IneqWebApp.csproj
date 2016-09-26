@@ -39,10 +39,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -109,16 +114,51 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="Views\Login\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\IneqApi\Models\Brand.cs">
+      <Link>Models\Brand.cs</Link>
+    </Compile>
+    <Compile Include="..\IneqApi\Models\Component.cs">
+      <Link>Models\Component.cs</Link>
+    </Compile>
+    <Compile Include="..\IneqApi\Models\ComponentType.cs">
+      <Link>Models\ComponentType.cs</Link>
+    </Compile>
+    <Compile Include="..\IneqApi\Models\Equipment.cs">
+      <Link>Models\Equipment.cs</Link>
+    </Compile>
+    <Compile Include="..\IneqApi\Models\EquipmentType.cs">
+      <Link>Models\EquipmentType.cs</Link>
+    </Compile>
+    <Compile Include="..\IneqApi\Models\IneqDbContext.cs">
+      <Link>Models\IneqDbContext.cs</Link>
+    </Compile>
+    <Compile Include="..\IneqApi\Models\Model.cs">
+      <Link>Models\Model.cs</Link>
+    </Compile>
+    <Compile Include="..\IneqApi\Models\Status.cs">
+      <Link>Models\Status.cs</Link>
+    </Compile>
+    <Compile Include="..\IneqApi\Models\sysdiagrams.cs">
+      <Link>Models\sysdiagrams.cs</Link>
+    </Compile>
+    <Compile Include="..\IneqApi\Models\User.cs">
+      <Link>Models\User.cs</Link>
+    </Compile>
+    <Compile Include="..\IneqApi\Models\Warehouse.cs">
+      <Link>Models\Warehouse.cs</Link>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

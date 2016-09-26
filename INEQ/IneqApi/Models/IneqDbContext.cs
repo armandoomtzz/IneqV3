@@ -1,9 +1,11 @@
-namespace IneqWebApi.Models
+namespace IneqApi.Models
 {
     using System;
+    using System.Collections.Generic;
     using System.Data.Entity;
-    using System.ComponentModel.DataAnnotations.Schema;
+    using System.Data.Entity.ModelConfiguration.Conventions;
     using System.Linq;
+    using System.Web;
 
     public partial class IneqDbContext : DbContext
     {
@@ -12,7 +14,6 @@ namespace IneqWebApi.Models
         {
         }
 
-        public virtual DbSet<C__MigrationHistory> C__MigrationHistory { get; set; }
         public virtual DbSet<Brand> Brand { get; set; }
         public virtual DbSet<Component> Component { get; set; }
         public virtual DbSet<ComponentType> ComponentType { get; set; }

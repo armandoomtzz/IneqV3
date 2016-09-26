@@ -1,4 +1,4 @@
-namespace IneqWebApi.Models
+namespace IneqApi.Models
 {
     using System;
     using System.Collections.Generic;

@@ -1,4 +1,4 @@
-﻿using IneqWebApi.Models;
+﻿using IneqApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +20,12 @@ namespace IneqApi.Controllers
             return View(db.User.ToList());
         }
 
-        private ActionResult View(List<IneqWebApi.Models.User> list)
+        private ActionResult View(List<IneqApi.Models.User> list)
+        {
+            throw new NotImplementedException();
+        }
+
+        private ActionResult View(List<IneqApi.Areas.HelpPage.Models.User> list)
         {
             throw new NotImplementedException();
         }
@@ -39,18 +44,18 @@ namespace IneqApi.Controllers
         {
             var e = db.User.Where(u => u.Username == user.Username && u.Password == user.Password).FirstOrDefault();
 
-                if (e != null)
-                {
-                    e.ID.ToString();
-                    e.Username.ToString();
-                    return RedirectToAction("LoggedIn");
-                }
-                else
-                {
-                    ModelState.AddModelError("", "El usuario o la contraseña estan equivocados. Confirme si los datos estan correctos.");
-                }
-                return View();
-            
+            if (e != null)
+            {
+                e.Id.ToString();
+                e.Username.ToString();
+                return RedirectToAction("LoggedIn");
+            }
+            else
+            {
+                ModelState.AddModelError("", "El usuario o la contraseña estan equivocados. Confirme si los datos estan correctos.");
+            }
+            return View();
+
 
         }
 
@@ -69,35 +74,6 @@ namespace IneqApi.Controllers
             {
                 return RedirectToAction("Login");
             }
-        }
-
-        //
-        //
-        // GET api/login
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
-        // GET api/login/5
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/login
-        public void Post([FromBody]string value)
-        {
-        }
-
-        // PUT api/login/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/login/5
-        public void Delete(int id)
-        {
         }
     }
 }
