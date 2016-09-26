@@ -1,13 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IneqWebApp", "IneqWebApp\IneqWebApp.csproj", "{6CD1ACF1-A8E7-4361-B491-127FA7D40526}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IneqApi", "IneqApi\IneqApi.csproj", "{606444EB-A239-4535-9F2B-5744D29EEF0C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PHP Casos de Uso", "PHP Casos de Uso", "{F965B0D7-539B-4175-86FF-8EF7B41D0638}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Documents\CasosVistaPHP\ConsultaEquipo14.php = ..\..\..\..\Documents\CasosVistaPHP\ConsultaEquipo14.php
+		..\..\..\..\Documents\CasosVistaPHP\Crear3.2.php = ..\..\..\..\Documents\CasosVistaPHP\Crear3.2.php
+		..\..\..\..\Documents\CasosVistaPHP\Crear5.2.php = ..\..\..\..\Documents\CasosVistaPHP\Crear5.2.php
+		..\..\..\..\Documents\CasosVistaPHP\Modificar3.3.php = ..\..\..\..\Documents\CasosVistaPHP\Modificar3.3.php
+		..\..\..\..\Documents\CasosVistaPHP\Modificar5.3.php = ..\..\..\..\Documents\CasosVistaPHP\Modificar5.3.php
+		..\..\..\..\Documents\CasosVistaPHP\Principal3.1.php = ..\..\..\..\Documents\CasosVistaPHP\Principal3.1.php
+		..\..\..\..\Documents\CasosVistaPHP\Principal5.1.php = ..\..\..\..\Documents\CasosVistaPHP\Principal5.1.php
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Script MySQL", "Script MySQL", "{71BB0B30-A78B-4A7B-8050-63B2E387BD67}"
 EndProject
